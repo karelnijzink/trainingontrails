@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Training on Trails · Outdoor Fitness on Vancouver's North Shore</title>
+<meta name="description" content="Trail running courses, beach group fitness, learn-to-run-5km and personal coaching on Vancouver's North Shore, plus wellness retreats in Pemberton. Led by Helmy Nijzink. Your first session is free.">
+<link rel="canonical" href="https://trainingontrails.com/">
+<meta property="og:title" content="Training on Trails">
+<meta property="og:description" content="Outdoor fitness on Vancouver's North Shore. Trail running, group fitness, personal coaching and Pemberton retreats. First session free.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://trainingontrails.com/">
+<meta name="theme-color" content="#17B8CE">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Training on Trails",
+"description":"Outdoor fitness, trail running courses and wellness retreats on Vancouver's North Shore.",
+"url":"https://trainingontrails.com/","email":"helmynijzink@gmail.com","telephone":"+1-604-354-8354",
+"areaServed":["West Vancouver","North Vancouver","Pemberton"],
+"founder":{"@type":"Person","name":"Helmy Nijzink"},
+"sameAs":["https://www.instagram.com/training_on_trails/"]}
+</script>
+<style>
+  :root{
+    --turq:#17B8CE; --turq-d:#0E93A6; --ink:#0B3C46; --ink-d:#072B33;
+    --tint:#EAF7F9; --tint-2:#F5FBFC; --white:#FFFFFF;
+    --dim:#4A6970; --line:rgba(11,60,70,.12);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--white);color:var(--ink);
+    font-family:Outfit,'Segoe UI',-apple-system,sans-serif;font-size:17px;line-height:1.65;
+    -webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:var(--turq-d)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+  /* nav */
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);
+    backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;
+    gap:16px;padding-top:12px;padding-bottom:12px}
+  .logo{font-weight:800;font-size:19px;letter-spacing:-.02em;color:var(--ink);
+    text-decoration:none;line-height:1.15}
+  .logo span{display:block;font-size:10.5px;font-weight:600;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--turq-d)}
+  nav{display:flex;gap:22px;align-items:center}
+  nav a{color:var(--ink);text-decoration:none;font-size:15px;font-weight:500;opacity:.88}
+  nav a:hover{opacity:1;color:var(--turq-d)}
+  nav a.cta{background:var(--turq);color:var(--ink-d);font-weight:700;
+    padding:9px 17px;border-radius:999px;opacity:1}
+  nav a.cta:hover{background:var(--ink);color:var(--white)}
+  .menu{display:none;background:none;border:1px solid var(--line);color:var(--ink);
+    border-radius:8px;padding:7px 11px;font:inherit;font-size:14px;cursor:pointer}
+  @media(max-width:820px){
+    nav{position:fixed;inset:57px 0 auto 0;background:var(--white);flex-direction:column;
+      align-items:stretch;gap:0;padding:8px 24px 20px;border-bottom:1px solid var(--line);
+      box-shadow:0 14px 30px rgba(7,43,51,.12)}
+    nav[hidden]{display:none}
+    nav a{padding:13px 0;border-bottom:1px solid var(--line);font-size:17px}
+    nav a.cta{text-align:center;margin-top:14px;border-bottom:none}
+    .menu{display:block}
+  }
+
+  /* hero */
+  .hero{position:relative;padding:96px 0 84px;color:var(--white);overflow:hidden}
+  .herobg{position:absolute;inset:0;z-index:0}
+  .herobg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+    opacity:0;transition:opacity 2.2s ease;transform:scale(1);
+    animation:kenburns 22s ease-in-out infinite alternate}
+  .herobg img.on{opacity:1}
+  @keyframes kenburns{from{transform:scale(1) translateY(0)}to{transform:scale(1.09) translateY(-1.5%)}}
+  @media (prefers-reduced-motion: reduce){.herobg img{animation:none;transition:none}}
+  .heroshade{position:absolute;inset:0;z-index:1;
+    background:linear-gradient(100deg,rgba(7,43,51,.88) 0%,rgba(7,43,51,.72) 45%,rgba(7,43,51,.38) 100%)}
+  .hero .wrap{position:relative;z-index:2}
+  h1{font-size:clamp(40px,7vw,72px);line-height:1.02;letter-spacing:-.035em;
+    margin:0 0 18px;color:var(--white);font-weight:800}
+  .hero .sub{font-size:clamp(20px,2.6vw,27px);color:var(--turq);font-weight:600;
+    margin:0 0 22px;line-height:1.25}
+  .hero p.lede{font-size:19px;max-width:56ch;color:rgba(255,255,255,.94);margin:0 0 28px}
+  .quote{font-size:15px;color:rgba(255,255,255,.82);font-style:italic;margin:0 0 30px}
+  .btns{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-block;background:var(--turq);color:var(--ink-d);font-weight:700;
+    padding:14px 26px;border-radius:999px;text-decoration:none;font-size:16.5px}
+  .btn:hover{background:var(--white);color:var(--ink-d)}
+  .btn.ghost{background:none;color:var(--white);border:1px solid rgba(255,255,255,.45)}
+  .btn.ghost:hover{border-color:var(--turq);color:var(--turq);background:none}
+  .free{margin-top:20px;font-size:15.5px;color:rgba(255,255,255,.88)}
+  .free b{color:var(--turq)}
+
+  /* sections */
+  section{padding:66px 0;border-bottom:1px solid var(--line);scroll-margin-top:64px}
+  #coaching{scroll-margin-top:88px}
+  .eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.19em;text-transform:uppercase;
+    color:var(--turq-d);margin:0 0 10px}
+  h2{font-size:clamp(29px,4.2vw,42px);line-height:1.1;letter-spacing:-.028em;
+    margin:0 0 16px;color:var(--ink);font-weight:800}
+  h3{font-size:22px;margin:0 0 10px;color:var(--ink);font-weight:700;letter-spacing:-.01em}
+  .intro{font-size:19px;max-width:60ch;color:var(--dim);margin:0 0 34px}
+
+  .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(265px,1fr))}
+  .photos{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    margin:0 0 30px}
+  .photos img{width:100%;height:250px;object-fit:cover;border-radius:14px;
+    border:1px solid var(--line)}
+  .photos img.tall{height:320px}
+  .card{background:var(--tint-2);border:1px solid var(--line);border-radius:16px;
+    padding:26px 24px}
+  .card .when{font-size:14px;color:var(--turq-d);font-weight:600;margin:0 0 12px;
+    padding-bottom:12px;border-bottom:1px solid var(--line)}
+  .card p{margin:0 0 12px;font-size:16px;color:var(--ink)}
+  .card p:last-child{margin:0}
+  .card ul{margin:12px 0 0;padding:0 0 0 20px}
+  .card li{margin-bottom:6px;font-size:15.5px;color:var(--dim)}
+  .tag{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--ink-d);background:var(--turq);
+    padding:3px 11px;border-radius:999px;margin-bottom:12px}
+
+  /* retreat */
+  .retreat{background:var(--ink);color:var(--white)}
+  .retreat h2{color:var(--white)}
+  .retreat h3{color:var(--turq)}
+  .retreat .eyebrow{color:var(--turq)}
+  .retreat .intro{color:rgba(255,255,255,.85)}
+  .split{display:grid;gap:26px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));
+    align-items:start}
+  .incl{list-style:none;margin:0;padding:0}
+  .incl li{padding:11px 0 11px 26px;position:relative;border-bottom:1px solid rgba(255,255,255,.16);
+    font-size:16.5px}
+  .incl li:last-child{border-bottom:none}
+  .incl li::before{content:'';position:absolute;left:0;top:19px;width:9px;height:9px;
+    border-radius:50%;background:var(--turq)}
+  .day{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);
+    border-radius:16px;padding:24px}
+  .day h4{margin:0 0 14px;font-size:15px;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--turq);font-weight:700}
+  .day dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:9px 15px;font-size:15.5px}
+  .day dt{color:var(--turq);font-weight:700;white-space:nowrap}
+  .day dd{margin:0;color:rgba(255,255,255,.92)}
+  .retreat .note{margin-top:22px;color:rgba(255,255,255,.85)}
+
+  /* about */
+  .about{background:var(--tint)}
+  .about .split{grid-template-columns:minmax(220px,300px) 1fr 1fr}
+  @media(max-width:900px){.about .split{grid-template-columns:1fr}}
+  .about .portrait{width:100%;border-radius:16px;border:1px solid var(--line);object-fit:cover}
+  .about .creds{list-style:none;margin:18px 0 0;padding:0}
+  .about .creds li{padding:9px 0;border-bottom:1px solid var(--line);font-size:16.5px}
+  .about .creds li:last-child{border-bottom:none}
+  .about .creds b{color:var(--turq-d)}
+  .philo{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:26px}
+  .philo blockquote{margin:0 0 16px;font-size:26px;font-weight:700;color:var(--turq-d);
+    line-height:1.25;letter-spacing:-.02em}
+
+  /* contact */
+  .contact{background:var(--white);text-align:center}
+  .contact h2{margin-bottom:12px}
+  .contact .intro{margin:0 auto 30px}
+  .contact .btn{background:var(--turq);color:var(--ink-d)}
+  .contact .btn:hover{background:var(--ink);color:var(--white)}
+  .ways{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:32px}
+  .way{background:var(--tint-2);border:1px solid var(--line);border-radius:14px;
+    padding:18px 26px;min-width:210px}
+  .way .k{font-size:11.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--turq-d);
+    font-weight:700;margin-bottom:5px}
+  .way a{font-size:17px;font-weight:600;text-decoration:none;word-break:break-word;color:var(--ink)}
+
+  footer{padding:34px 0;font-size:14.5px;color:rgba(255,255,255,.75);background:var(--ink-d)}
+  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  footer a{text-decoration:none;color:var(--turq)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">Training on Trails<span>Outdoor Fitness</span></a>
+    <button class="menu" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav">
+      <a href="#trail">Trail Running</a>
+      <a href="#group">Group Fitness</a>
+      <a href="#coaching">Coaching</a>
+      <a href="#retreat">Retreats</a>
+      <a href="#about">About</a>
+      <a class="cta" href="#contact">Try it free</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="herobg" aria-hidden="true">
+    <img src="media/hero-1.jpg" alt="" class="on" loading="eager">
+    <img src="media/hero-4.jpg" alt="" loading="lazy">
+    <img src="media/hero-3.jpg" alt="" loading="lazy">
+    <img src="media/hero-2.jpg" alt="" loading="lazy">
+  </div>
+  <div class="heroshade" aria-hidden="true"></div>
+  <div class="wrap">
+    <h1>Training on Trails</h1>
+    <p class="sub">Outdoor fitness on Vancouver's North Shore</p>
+    <p class="lede">Trail running courses, group fitness on the beach, and personal coaching
+    in the forests, parks and shoreline of the North Shore. Absolute beginners are welcome,
+    and no experience is necessary.</p>
+    <p class="quote">"Nature is medicine."</p>
+    <div class="btns">
+      <a class="btn" href="#contact">Book your free first session</a>
+      <a class="btn ghost" href="#trail">See what's on</a>
+    </div>
+    <p class="free"><b>Your first time is free.</b> Come for fun, laughter and wellbeing.</p>
+  </div>
+</div>
+
+<section id="trail">
+  <div class="wrap">
+    <p class="eyebrow">Trail running</p>
+    <h2>Learn to move well on the trails</h2>
+    <p class="intro">Two seven-week courses on the North Shore, built around chi running
+    technique and run in a fun, supportive group.</p>
+
+    <div class="photos">
+      <img class="tall" src="media/trail-1.jpg" alt="A group hiking up a forest trail on the North Shore" loading="lazy">
+      <img class="tall" src="media/trail-2.jpg" alt="Trail runners moving through tall trees" loading="lazy">
+      <img class="tall" src="media/hero-2.jpg" alt="Sunlight through a stand of tall cedars" loading="lazy">
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <span class="tag">7 weeks</span>
+        <h3>Introductory Course</h3>
+        <p class="when">Wednesdays at 9:00am</p>
+        <p>New to trail running, or just want to build your fitness? This is an introduction
+        to the techniques and skills you need to become a trail runner, in a fun and supportive
+        environment.</p>
+        <p>Absolute beginners are welcome and no experience is necessary.</p>
+      </div>
+
+      <div class="card">
+        <span class="tag">7 weeks</span>
+        <h3>Intermediate Course</h3>
+        <p class="when">Tuesdays at 9:00am</p>
+        <p>For you if you can already run three to five kilometres and want to bring that onto
+        the trail, develop it further, or get back into trail running after a break.</p>
+      </div>
+
+      <div class="card">
+        <h3>What you'll work on</h3>
+        <p class="when">Each week explores a new trail</p>
+        <ul>
+          <li>Chi running technique</li>
+          <li>Strategies for uphill and downhill</li>
+          <li>Managing more technical trails</li>
+          <li>Trail etiquette</li>
+          <li>Breathing and posture</li>
+          <li>How to avoid injuries</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="group">
+  <div class="wrap">
+    <p class="eyebrow">Group fitness</p>
+    <h2>Cardio and strength, outdoors, all year</h2>
+    <p class="intro">On the beach at Dundarave and Ambleside, and along the Ambleside seawall.
+    All fitness levels are welcome.</p>
+
+    <div class="photos">
+      <img src="media/beach-2.jpg" alt="A group exercising together on the beach at Ambleside" loading="lazy">
+      <img src="media/beach-1.jpg" alt="Two runners on the sand at the water's edge" loading="lazy">
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <span class="tag">Drop in or 6 weeks</span>
+        <h3>Group Fitness at the beach</h3>
+        <p class="when">Thursdays at 9:15am &middot; Dundarave or Ambleside</p>
+        <p>Cardio and strength based activities on the sand, with all fitness levels welcome.
+        Come as a drop-in or join the six-week course.</p>
+        <p>And perhaps you'll join us for a refreshing swim afterwards.</p>
+      </div>
+
+      <div class="card">
+        <span class="tag">6 weeks</span>
+        <h3>Learn to run 5km</h3>
+        <p class="when">Thursdays at 5:00pm &middot; Ambleside seawall</p>
+        <p>Develop your technique and your stamina, working towards an event or a goal of your
+        own. Complete two short homework sessions each week and you will get to five kilometres.</p>
+        <p>Perhaps the Ambleside Parkrun is for you afterwards.</p>
+      </div>
+
+      <div class="card" id="coaching">
+        <span class="tag">One to one</span>
+        <h3>Personal Coaching</h3>
+        <p class="when">Parks, beach, trails, or your own backyard</p>
+        <p>Outdoor personal training with a certified coach, blending the customised
+        programming and accountability of traditional training with the mental health and
+        cardiovascular benefits of exercising in nature.</p>
+        <p>Good for building back after a health challenge, improving your running technique,
+        training for an event, or simply having someone in your corner.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="retreat" id="retreat">
+  <div class="wrap">
+    <p class="eyebrow">Health and wellness retreat</p>
+    <h2>Two days in Pemberton</h2>
+    <p class="intro">Give this gift of adventure to yourself. Two beautiful hikes in the
+    mountains and forests around Pemberton, and a night in a Swiss cabin on the meadows.</p>
+
+    <div class="photos">
+      <img src="media/retreat-3.jpg" alt="Snow-capped mountains above the Pemberton Valley farmland" loading="lazy">
+      <img src="media/retreat-1.jpg" alt="Arriving at the cabin on the meadows in Pemberton" loading="lazy">
+      <img src="media/retreat-2.jpg" alt="A picnic basket, flowers and fresh farm food on a checked tablecloth" loading="lazy">
+    </div>
+
+    <div class="split">
+      <div>
+        <h3>What's included</h3>
+        <ul class="incl">
+          <li>Two hikes in the mountains and forests around Pemberton</li>
+          <li>One night in a beautiful Swiss cabin</li>
+          <li>Your own private room</li>
+          <li>Great, healthy food and drinks throughout</li>
+        </ul>
+        <h3 style="margin-top:28px">Available all year</h3>
+        <ul class="incl">
+          <li>Joffre Lakes hike</li>
+          <li>Snowshoeing</li>
+          <li>Skiing at Whistler</li>
+          <li>Farmhopping on foot or by bike</li>
+          <li>A relaxation retreat, or a swim in the lake</li>
+        </ul>
+        <p class="note">Join a planned getaway, or customise one
+        for your own group. Lovely for birthdays, celebrations and get-togethers.</p>
+        <p><a class="btn" href="#contact">Ask about the next dates</a></p>
+      </div>
+
+      <div>
+        <div class="day">
+          <h4>Sample summer itinerary &middot; Day one</h4>
+          <dl>
+            <dt>Noon</dt><dd>Meet in Pemberton for a picnic at One Mile Lake</dd>
+            <dt>1:00pm</dt><dd>A beautiful hike from the lake to Nairn Falls</dd>
+            <dt>4:00pm</dt><dd>Visit the Beer Farmers and their Highland cows</dd>
+            <dt>5:30pm</dt><dd>Arrive at the cabin on the meadows</dd>
+            <dt>6:00pm</dt><dd>Welcome with sparkling drinks and apéritifs</dd>
+            <dt>7:30pm</dt><dd>Home-cooked dinner</dd>
+          </dl>
+        </div>
+        <div class="day" style="margin-top:16px">
+          <h4>Day two</h4>
+          <dl>
+            <dt>7:00am</dt><dd>Morning chi walking or running in the meadows</dd>
+            <dt>9:00am</dt><dd>Healthy breakfast with farm eggs and homemade bread</dd>
+            <dt>10:00am</dt><dd>A two-hour hike along the Pemberton Valley trails, farmhopping
+              on the way for local veggies, bread and eggs</dd>
+            <dt>1:00pm</dt><dd>Lunch at North Arm Farm</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <p class="eyebrow">Who is Training on Trails</p>
+    <h2>Helmy Nijzink</h2>
+
+    <div class="split">
+      <div>
+        <img class="portrait" src="media/about.jpg" alt="Helmy Nijzink" loading="lazy">
+      </div>
+      <div>
+        <p class="intro" style="margin-bottom:0">I'm a certified personal trainer and coach,
+        and I run everything here myself. Everyone can take part in outdoor fitness, whatever
+        your starting point, and I'd rather you came for the fun, the laughter and the
+        wellbeing than for anything else.</p>
+        <ul class="creds">
+          <li><b>Founder</b> of Training on Trails</li>
+          <li><b>Personal trainer</b> and coach</li>
+          <li><b>Master</b> in Health Sciences</li>
+          <li><b>Bachelor</b> in Physical Education</li>
+          <li><b>Cancer thriver</b></li>
+        </ul>
+      </div>
+      <div class="philo">
+        <blockquote>"Nature is medicine."</blockquote>
+        <p>Start with a morning workout. It will make your day.</p>
+        <p>And use the principles of chi running and walking, so that moving well becomes
+        something your body does easily rather than something you have to force.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <p class="eyebrow">Get in touch</p>
+    <h2>Your first time is free</h2>
+    <p class="intro">Come and try it. Send me a message and tell me a little about where you're
+    starting from, and I'll point you at the right group.</p>
+    <a class="btn" href="mailto:helmynijzink@gmail.com?subject=Training%20on%20Trails">Email Helmy</a>
+
+    <div class="ways">
+      <div class="way">
+        <div class="k">Email</div>
+        <a href="mailto:helmynijzink@gmail.com">helmynijzink@gmail.com</a>
+      </div>
+      <div class="way">
+        <div class="k">Phone or text</div>
+        <a href="tel:+16043548354">604-354-8354</a>
+      </div>
+      <div class="way">
+        <div class="k">Instagram</div>
+        <a href="https://www.instagram.com/training_on_trails/" rel="me">@training_on_trails</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Training on Trails &middot; Outdoor fitness on Vancouver's North Shore</span>
+    <span><a href="https://www.instagram.com/training_on_trails/">Instagram</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var imgs=[].slice.call(document.querySelectorAll('.herobg img'));
+  if(imgs.length>1 && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var i=0;
+    setInterval(function(){
+      imgs[i].classList.remove('on');
+      i=(i+1)%imgs.length;
+      imgs[i].classList.add('on');
+    }, 7000);
+  }
+})();
+(function(){
+  var b=document.getElementById('menuBtn'), n=document.getElementById('nav');
+  function small(){ return window.matchMedia('(max-width:820px)').matches; }
+  function close(){ if(small()){ n.hidden=true; b.setAttribute('aria-expanded','false'); } }
+  function sync(){ if(small()) close(); else { n.hidden=false; } }
+  b.addEventListener('click', function(){
+    var open = !n.hidden;
+    n.hidden = open;
+    b.setAttribute('aria-expanded', String(!open));
+  });
+  n.addEventListener('click', function(e){ if(e.target.tagName==='A') close(); });
+  window.addEventListener('resize', sync);
+  sync();
+})();
+</script>
+</body>
+</html>
